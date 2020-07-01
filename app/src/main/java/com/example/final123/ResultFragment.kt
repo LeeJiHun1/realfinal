@@ -28,8 +28,9 @@ class ResultFragment : Fragment(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         data = xmlData
-        txt_result?.text = data
-        Log.i("asgdsdag", txt_result?.text.toString())
+        txt_result?.text = xmlData
+
+        Log.i("sagddsg", data)
     }
 
 
@@ -37,7 +38,6 @@ class ResultFragment : Fragment(){
 
     //Log.i("connect","connect");
     val xmlData:
-
             //Log.i("eventtype",""+eventType+"/끝"+XmlPullParser.END_DOCUMENT+"/시작태그"+XmlPullParser.START_TAG+"/시작"+XmlPullParser.START_DOCUMENT);
             String
         get() {
