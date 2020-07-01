@@ -27,7 +27,7 @@ class SearchFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         button.setOnClickListener {
-            if(edit?.text.toString() == null ){
+            if(edit?.text.toString() == "" ){
                 Toast.makeText(requireContext(), "주소를 입력해주세요", Toast.LENGTH_LONG).show()
             }else {
                 findNavController().navigate(
