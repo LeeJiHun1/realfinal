@@ -13,8 +13,11 @@ import java.net.URL
 import java.net.URLEncoder
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_result.*
+import kotlinx.android.synthetic.main.fragment_search.*
 import java.io.InputStream
 import java.io.StringReader
 
@@ -31,6 +34,13 @@ class ResultFragment : Fragment(){
         txt_result?.text = xmlData
 
         Log.i("sagddsg", data)
+
+        //지도 불러오기 버튼
+        button.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_resultFragment_to_map3
+            )
+        }
     }
 
 

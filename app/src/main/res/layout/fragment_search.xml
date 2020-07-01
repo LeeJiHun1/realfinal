@@ -14,87 +14,56 @@
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
         <RadioButton
             android:id="@+id/radioButton_lnmAdres"
-            android:layout_width="180dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="도로명 주소 입력" />
+            android:text="도로명주소 (로) 입력" />
 
         <RadioButton
             android:id="@+id/radioButton_rnAdres"
-            android:layout_width="180dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="동/읍/면 주소 입력"
-            />
-
-
+            android:text="지번주소 (읍/면/동) 입력" />
     </RadioGroup>
 
     <LinearLayout
-
         android:layout_width="match_parent"
-
         android:layout_height="50dp"
-
         android:orientation="horizontal"
-
         android:weightSum="10">
-
 
         <EditText
             android:id="@+id/edit"
-
             android:layout_width="0dp"
-
             android:layout_height="match_parent"
-
             android:layout_weight="8"
-
-            android:hint="enter text to search"
-
+            android:hint="변환할 주소를 입력해 주세요"
             android:textSize="12sp" />
 
         <Button android:id="@+id/button"
-
             android:layout_width="0dp"
-
             android:layout_height="match_parent"
-
             android:layout_weight="2"
-
-            android:text="search"
-
+            android:text="변환하기"
             android:textSize="12sp"
-
             android:onClick="mOnClick"/>
-
-
-
     </LinearLayout>
 
-
     <ScrollView
-
-        android:layout_width="395dp"
-
-        android:layout_height="497dp">
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp">
 
         <TextView
             android:id="@+id/text"
-
             android:layout_width="match_parent"
-
             android:layout_height="match_parent"
-
             android:textSize="8sp"
-
             android:textStyle="bold" />
-
-
     </ScrollView>
-
 
 </LinearLayout>
