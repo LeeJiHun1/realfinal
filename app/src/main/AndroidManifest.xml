@@ -13,6 +13,10 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBgwcfu13fSictBu6Ldqe73MmE4jQrsKUA" />
+
         <activity android:name=".MainActivity"
             tools:ignore="Instantiatable">
             <intent-filter>
