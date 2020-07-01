@@ -29,7 +29,7 @@ class ResultFragment : Fragment(){
         super.onCreate(savedInstanceState)
         data = xmlData
         txt_result?.text = data
-        Log.i("asgdsdag", data)
+        Log.i("asgdsdag", txt_result?.text.toString())
     }
 
 
